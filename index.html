@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="imgs/smile.png">
+    <title>Julian's Portfolio</title>
+</head>
+
+<body>
+
+    <header>
+
+        <nav id = "top"> <!--Navigation bar which contains section links to areas on the website-->
+            <a href="#achievements">Achievements</a>
+            <a href="#timeline">Timeline</a> 
+            <a href="#social">Social Media</a>
+        </nav> 
+
+    </header>
+
+    <main>
+
+        <script>
+
+            var name = prompt("What is your name?"); // prompts a message on screen asking the users name
+
+            // if function which checks if the input is empty or null, and replaces it with an appropriate string
+            if(name == "null" || name == "") { 
+                name = "to my portfolio";
+            }
+            
+            document.write("<h1>" + "Welcome " + name + "! </h1>"); // adds an introductory message with the name the user entered to display on the page
+
+        </script>    
+
+        <noscript> Sorry, your browser does not support JavaScript but welcome to my portfolio! </noscript>
+
+        <br>
+
+        <h2>Who am I?</h2> <!--Introduction paragraph-->
+
+        <p>
+            My name is <strong class = "personal">Tan Yi Wei</strong> or better referred to as <strong class ="personal">Julian</strong> and I am a student at 
+            <strong class = "personal">Taylor's College </strong> currently enrolling in the <strong class = "personal">Diploma in Information Technology</strong> 
+            program. I am currently <strong class = "personal">18 years old</strong> as of June 2021 and my birthday is on the 
+            <strong class = "personal">29<sup>th</sup> of September</strong>.
+
+            <br> <br>
+
+            This portfolio is the result of my college assignment which I hope one day, will turn into an actual professionally designed portfolio. 
+            After this program, I plan to take a <strong class = "personal">Bachelors in Computer Science</strong> and to hopefully someday, become 
+            a <strong class ="personal">full-stack developer</strong> and provide my services to those who need it. On the right is a picture of me
+            taken in 2019.
+        </p>
+        
+        <img class="selfie" src="imgs/me.jpg" alt = "A picture of me">
+
+        <br> 
+
+        <h2 id = "achievements">Achievements</h2>
+
+        <ul class ="achievement_list">
+            <li>Being born</li>
+            <li>Going from a D to A* in IGCSE Physics in 4 months</li>
+            <li>Surviving highschool</li>
+            <li>Maintaining my GPA in college</li>
+        </ul>
+
+        <h2 id = "timeline">Timeline</h2>
+
+        <section class = "timeline_container"> <!--Section to segregate different divs used for different timelines-->
+            <div class = "period">
+                <h3>Highschool</h3>
+                <h3>Beaconhouse Sri Inai</h3>
+                <h4>2009 - 2019</h4>
+            </div>
+            <div class = "period">
+                <h3>College</h3>
+                <h3>Taylor's College</h3>
+                <h4>2020 - Present</h4>
+            </div>
+            <div class = "period">
+                <h3>University</h3>
+                <h3>TBD</h3>
+                <h4>TBD</h4>
+            </div>
+        </section>
+
+    </main>
+
+    <footer> <!--Bottom of the page which includes social media links and a link back to the top.-->
+        <ul>
+            <li><a href="https://www.facebook.com/chulsoonofficial" target="_blank"><img src="imgs/facebook.png" alt="Facebook logo"></a></li>
+            <li><a href="https://www.linkedin.com/in/julian-tan-0a2235213/" target="_blank"><img src="imgs/linkedin.png" alt="LinkedIn logo"></a></li>
+        </ul>
+        <p id = "social"> Click an icon above to check out my accounts! Or click <a href="#top">here</a> to go back to the top! </p> 
+    </footer>
+
+</body>
+
+</html>
